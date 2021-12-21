@@ -1,0 +1,23 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Iteration
+    body 
+        h2 Iteration 
+        a(href="https://pugjs.org/language/iteration.html" target="_blank") Pug > iteration
+        hr 
+        h2 each 
+        - let values =  [1, 2, 3, 4, 5]
+        ul
+            each val in values
+                li= val
+            else 
+                li there are no values  
+        hr 
+        h2 While 
+        - var n = 0;
+        ul
+            while n < 4
+                li= n++
