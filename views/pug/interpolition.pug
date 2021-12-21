@@ -1,0 +1,34 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Interpolition
+    body 
+        h2 Interpolition 
+        a(href="https://pugjs.org/language/interpolation.html" target="_blank") Pug > interpolation
+        hr
+        p Değişkenlerimizi html içerisinde kullanmamıza olanak sağlar kullanım şekli \#{degisken_adi} şeklindedir.
+        - let title = "Interpolition Kullanımı" 
+        h1 #{title}   \#{degisken_adi}
+        hr
+        p büyük harfle yazmak istersek: \#{degisken_adi.toUpperCase()}
+        p #{title.toUpperCase()};
+        hr
+        p kaçış işareti \ olarak kullanılır.
+        hr
+        - var riskyBusiness = "<em>Some of the girls are wearing my mother's clothing.</em>";
+        .quote
+            p Joel: !{riskyBusiness}
+        hr
+        p.
+            This is a very long and boring paragraph that spans multiple lines.
+            Suddenly there is a #[strong strongly worded phrase] that cannot be
+            #[em ignored].
+        hr
+        p
+            | If I don't write the paragraph with tag interpolation, tags like
+            strong strong
+            | and
+            em em
+            | might produce unexpected results.
