@@ -3,6 +3,8 @@
 <h5>Doğrudan bu projeyi clone diyip ayağa kaldırmak istersen</h5>
 <code>npm install</code> demen yeterli olacak
 
+<hr/>
+ 
 <h5>Sıfırdan proje oluşturmak istersen adımları takip et</h5>
 initalize node js
 <code>npm init</code>
@@ -20,6 +22,6 @@ create funcions (compileHtml,watchTask,default)
 
 run gulp
 
- <hr/>
+<hr/>
 
 browser-sync eklentisine gerek kalmadan vs code > live server ile değişikliği canlı yakalayabilirsin
