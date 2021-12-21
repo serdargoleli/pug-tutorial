@@ -1,0 +1,23 @@
+{
+  "name": "pug-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serdargoleli/pug-tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serdargoleli/pug-tutorial/issues"
+  },
+  "homepage": "https://github.com/serdargoleli/pug-tutorial#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^5.0.0"
+  }
+}
