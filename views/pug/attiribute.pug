@@ -7,44 +7,44 @@ html(lang="en")
         title Attiribute
     body 
 
-    h2 Attiribute
-    a(href='https://www.google.com') Google 
-    a(href='https://www.google.com' target="_blank") Google 
+        h2 Attiribute
+        a(href='https://www.google.com') Google 
+        a(href='https://www.google.com' target="_blank") Google 
 
-    h2 Multiple Attiribute
-    input(type="text" name="username" value="@serdargoleli" placeholder="username")
+        h2 Multiple Attiribute
+        input(type="text" name="username" value="@serdargoleli" placeholder="username")
 
-    h2 Attiribute Interpolation 
-    p Özniteliğinize değişkenler eklemek için kullanabileceğiniz bazı alternatifler şunlardır:
-    - var url = "serdargoleli.github.io"
-    a(href=url)  serdargoleli.github.io
+        h2 Attiribute Interpolation 
+        p Özniteliğinize değişkenler eklemek için kullanabileceğiniz bazı alternatifler şunlardır:
+        - var url = "serdargoleli.github.io"
+        a(href=url)  serdargoleli.github.io
 
-    h2 Unescaped Attributes  
-    p Özel karakterlerden kaçış için kullanılır
-    div(escaped="<code>")
-    div(unescaped!="<code>")
+        h2 Unescaped Attributes  
+        p Özel karakterlerden kaçış için kullanılır
+        div(escaped="<code>")
+        div(unescaped!="<code>")
 
-    h2 Boolean Attributes
-    - let check = true
-    input(type="checkbox") 
-    input(type="checkbox" checked="check") 
-    - check = false
-    input(type="checkbox" checked=check)  
+        h2 Boolean Attributes
+        - let check = true
+        input(type="checkbox") 
+        input(type="checkbox" checked="check") 
+        - check = false
+        input(type="checkbox" checked=check)  
 
-    h2 Class Attributes
-    - let classes  = ["foo","bar","baz"]
+        h2 Class Attributes
+        - let classes  = ["foo","bar","baz"]
 
-    span(class=classes) class Test
-    br
-    a.bang(class=classes class=['new class']) class=classes class=['new class'] 
-    br
-    h2 Active Class
-    - let currentUrl = '/attiribute'
-    a(class={active: currentUrl === '/'} href='/') Home
-    |
-    |
-    a(class={active: currentUrl === '/attiribute'} href='/attiribute') About
+        span(class=classes) class Test
+        br
+        a.bang(class=classes class=['new class']) class=classes class=['new class'] 
+        br
+        h2 Active Class
+        - let currentUrl = '/attiribute'
+        a(class={active: currentUrl === '/'} href='/') Home
+        |
+        |
+        a(class={active: currentUrl === '/attiribute'} href='/attiribute') About
 
-    h2 CLASS and ID Literal
-    #content content id
-    .content content class
+        h2 CLASS and ID Literal
+        #content content id
+        .content content class

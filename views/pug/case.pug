@@ -6,24 +6,24 @@ html(lang="en")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         title Case
     body 
-    h2 CASE
-    p Switch/case 
-    a(href="https://pugjs.org/language/case.html" target="_blank") Pug > case
-    - var friends = 3
-    case friends
-        when 0
-        when 1
-            p you have very few friends
-        default
-            p you have #{friends} friends
+        h2 CASE
+        p Switch/case 
+        a(href="https://pugjs.org/language/case.html" target="_blank") Pug > case
+        - var friends = 3
+        case friends
+            when 0
+            when 1
+                p you have very few friends
+            default
+                p you have #{friends} friends
 
-    hr
-    p break uses 
-    - var friends = 0
-    case friends
-        when 0
-            - break
-        when 1
-            p you have very few friends
-        default
-            p you have #{friends} friends
+        hr
+        p break uses 
+        - var friends = 0
+        case friends
+            when 0
+                - break
+            when 1
+                p you have very few friends
+            default
+                p you have #{friends} friends
