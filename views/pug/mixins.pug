@@ -1,0 +1,53 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title mixins
+    body 
+        h2 mixins 
+        a(href="https://pugjs.org/language/mixins.html" target="_blank") Pug > mixins
+        hr 
+        h2 mixins 
+        p Mixin'ler, yeniden kullanılabilir Pug blokları oluşturmanıza olanak tanır.
+        //- Declaration
+        mixin list
+            ul
+                li foo
+                li bar
+                li baz
+        //- Use
+        +list
+        +list
+        hr
+        mixin pet(name)
+            li.pet= name
+        ul
+            +pet("cat") 
+            +pet("dog") 
+            +pet("pig")
+        hr 
+        h2 Mixin Blocks
+        mixin article(title)
+            .article
+                .article-wrapper 
+                    h4 title
+                    if block
+                        block
+                    else 
+                        p No Content Provider
+
+
+        +article("Hello World Title")
+        hr
+        +article("Hello World Title")   
+            p This is my
+            p Amazing article
+        hr
+        h2 Rest Arguments
+        mixin list(id, ...items)
+            ul(id=id)
+                each item in items
+                    li= item
+
+        +list('my-list', 4,5,6,7,8)
